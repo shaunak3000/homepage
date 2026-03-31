@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Shaunak Dabadghao</title>
+<link rel="stylesheet" href="_shared.css">
+<style>
+.about-grid{display:grid;grid-template-columns:2fr 1fr;gap:4rem;align-items:start;}
+.aside-section{margin-bottom:2rem;}
+.aside-section h3{font-size:0.78rem;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-dim);border-bottom:1px solid var(--border-muted);padding-bottom:0.4em;margin-bottom:0.75rem;}
+.aside-section ul{padding-left:1.25em;}
+.aside-section li{font-size:0.875rem;color:var(--text-muted);}
+@media(max-width:640px){.about-grid{grid-template-columns:1fr;gap:2rem;}}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <a href="index.html" class="nav-name">shaunakdabadghao</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="consulting.html">Consulting</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+  <h1>About</h1>
+
+  <div class="about-grid reveal">
+    <div>
+      <p>I hold a <strong>PhD in Industrial Engineering</strong> from Purdue University (2013), and have spent the years since building a career that deliberately refuses to choose between theory and practice.</p>
+
+      <p>My research has been published in <strong>FT50-ranked journals</strong> including the Journal of Operations Management, Journal of Economic Dynamics and Control, Journal of Operational Research Society, and Annals of Operations Research.</p>
+
+      <p>My industry work has spanned <strong>credit underwriting at scale</strong>, fintech analytics, and operations strategy for Fortune 500 companies across Europe and the United States — from modeling CCAR stress tests at Discover Financial to leading credit risk strategy at Jenius Bank to pricing and risk at Shopify.</p>
+
+      <p>I managed a team of over 10 researchers at TU Eindhoven and was an award-winning teacher, responsible for the Business Economics elective package including Microeconomics, International Risk Management, Accounting, and Financial Management.</p>
+
+      <hr>
+
+      <p><strong>Get in touch</strong><br>
+      <a href="mailto:shaunak3000@gmail.com">shaunak3000@gmail.com</a></p>
+    </div>
+
+    <div>
+      <div class="aside-section">
+        <h3>Expertise</h3>
+        <ul>
+          <li>Data-Driven Decision Making</li>
+          <li>Operations–Finance Interface</li>
+          <li>Operations Strategy</li>
+          <li>Mathematical Finance</li>
+          <li>Credit Risk Modeling</li>
+          <li>Supply Chain Optimization</li>
+        </ul>
+      </div>
+      <div class="aside-section">
+        <h3>Education</h3>
+        <ul>
+          <li>PhD, Industrial Engineering<br>Purdue University, 2013</li>
+        </ul>
+      </div>
+      <div class="aside-section">
+        <h3>Interests</h3>
+        <ul>
+          <li>Bouldering &amp; Climbing</li>
+          <li>Snooker &amp; Pool</li>
+          <li>Science Fiction</li>
+        </ul>
+      </div>
+      <div class="aside-section">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="https://scholar.google.com/citations?user=n4YZN3cAAAAJ&hl=en" target="_blank">Google Scholar ↗</a></li>
+          <li><a href="https://www.linkedin.com/in/shaunakdabadghao/" target="_blank">LinkedIn ↗</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>Shaunak Dabadghao, PhD</span>
+  <a href="mailto:shaunak3000@gmail.com">shaunak3000@gmail.com</a>
+</footer>
+<script>
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('on');}),{threshold:0.05});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body></html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consulting — Shaunak Dabadghao</title>
+<link rel="stylesheet" href="_shared.css">
+<style>
+.year-tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:1.5rem;}
+.ytab{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:0.78rem;padding:0.5rem 1.1rem;border:none;background:none;cursor:pointer;color:var(--text-muted);border-bottom:2px solid transparent;margin-bottom:-1px;transition:all 0.15s;}
+.ytab:hover{color:var(--text);}
+.ytab.on{color:var(--accent);border-bottom-color:var(--accent);font-weight:600;}
+.ypanel{display:none;}
+.ypanel.on{display:block;}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <a href="index.html" class="nav-name">shaunakdabadghao</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="consulting.html" class="active">Consulting</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+  <h1>Consulting</h1>
+
+  <blockquote class="reveal">
+    <p>From 2015 to 2021, as a Professor of Operations and Finance at TU Eindhoven, I applied academic-grade rigor to real business problems — consulting for Fortune 500 companies and SMEs across Europe, occasionally involving my research staff. Engagements ranged from focused analytical projects to long-term retainer relationships spanning multiple functions and markets, helping firms cut through complexity, redesign operations, and make better decisions under uncertainty.</p>
+  </blockquote>
+
+  <hr>
+
+  <div class="year-tabs reveal">
+    <button class="ytab on" onclick="showY(this,'2021')">2021</button>
+    <button class="ytab" onclick="showY(this,'2020')">2020</button>
+    <button class="ytab" onclick="showY(this,'2019')">2019</button>
+    <button class="ytab" onclick="showY(this,'2018')">2018</button>
+  </div>
+
+  <!-- 2021 -->
+  <div class="ypanel on" id="y2021">
+    <details>
+      <summary>Fortune 500 Chemicals Manufacturer</summary>
+      <div class="dtag-row"><span class="tag">Simulation</span><span class="tag">Statistical Forecasting</span><span class="tag">Operations Strategy</span></div>
+      <div class="details-body"><dl>
+        <dt>Situation</dt><dd>Shipping chemicals from the Middle East to Europe; explore whether any efficiency gains are possible.</dd>
+        <dt>Task</dt><dd>1. Reduce shipping costs while incorporating demand forecasts.<br>2. Assess the general supply chain strategy.</dd>
+        <dt>Actions &amp; Results</dt><dd>1. Smart ordering considering the sawtooth shipping prices, available inventory and projected demand.<br>2. Combining several shipping routes to southern Europe with those sent to northern Europe — achieving higher service levels as well as reduced costs.</dd>
+      </dl></div>
+    </details>
+    <details>
+      <summary>Dutch Physiotherapy Clinics</summary>
+      <div class="dtag-row"><span class="tag">Simulation</span><span class="tag">Statistical Forecasting</span><span class="tag">Operations Strategy</span></div>
+      <div class="details-body"><dl>
+        <dt>Situation</dt><dd>Rapid growth after acquiring rival clinics across the Netherlands; unable to keep up with capacity planning.</dd>
+        <dt>Task</dt><dd>Assess current capacity needs and efficiently allocate capacity while maximizing utilization.</dd>
+        <dt>Actions &amp; Results</dt><dd>1. Improved data management practices (time stamping, therapist logs, classification) for future analyses.<br>2. Reduced treatment duration to 25 minutes for increased utilization.<br>3. Standardized therapist contracts for increased flexibility.<br>4. New treatment plan with initial screening from senior therapists; future appointments served by available therapists.</dd>
+      </dl></div>
+    </details>
+    <details>
+      <summary>Global Tank Container Logistics Provider</summary>
+      <div class="dtag-row"><span class="tag">Robust Optimization</span><span class="tag">Forecasting</span><span class="tag">Data Analytics</span></div>
+      <div class="details-body"><dl>
+        <dt>Situation</dt><dd>Empty chemical tank containers left at locations with low demand.</dd>
+        <dt>Task</dt><dd>Determine the optimal reallocation of tank containers at service locations.</dd>
+        <dt>Actions &amp; Results</dt><dd>1. Break down problem size from EU level to smaller regions.<br>2. Understand the 'time delay' between order arrival and service date.<br>3. Invest in a larger non-flexible tank type inventory vs. a smaller but flexible tank type inventory.</dd>
+      </dl></div>
+    </details>
+    <details>
+      <summary>Dutch e-commerce Webshop</summary>
+      <div class="dtag-row"><span class="tag">Combinatorial Optimization</span><span class="tag">Forecasting</span></div>
+      <div class="details-body"><dl>
+        <dt>Situation</dt><dd>Growing demand led to setting up new warehouses, but product allocation needs to be revised.</dd>
+        <dt>Task</dt><dd>Allocate products to different warehouses while satisfying capacity constraints, assignment, warehouse exclusivity and firm-specific unique constraints.</dd>
+        <dt>Actions &amp; Results</dt><dd>1. Switch from allocating suppliers to warehouse — to allocating products to warehouse.<br>2. Bundle frequently ordered products in the same warehouse.<br>3. New allocation is scalable with increases in warehouses.<br>4. Use a 60-day forecast for allocation, revised every two weeks.</dd>
+      </dl></div>
+    </details>
+  </div>
+
+  <!-- 2020 -->
+  <div class="ypanel" id="y2020">
+    <details>
+      <summary>Fortune 500 Healthcare Equipment Manufacturer</summary>
+      <div class="dtag-row"><span class="tag">Machine Learning</span><span class="tag">Operations Strategy</span></div>
+      <div class="details-body"><dl>
+        <dt>Situation</dt><dd>With a large supplier base, tracking their sustainability behavior is challenging. The firm wants a better supplier sustainability development program.</dd>
+        <dt>Task</dt><dd>1. Understand supplier learning behavior.<br>2. Improve supplier sustainability adaptation.</dd>
+        <dt>Actions &amp; Results</dt><dd>1. Fast and slow learning suppliers identified and linked with supplier characteristics such as size, industry, and maturity.<br>2. Increased buyer involvement in fast learning suppliers leads to better sustainability performance overall.</dd>
+      </dl></div>
+    </details>
+    <details>
+      <summary>Dutch Financial Institution — Personal Loans</summary>
+      <div class="dtag-row"><span class="tag">Machine Learning</span><span class="tag">A/B Testing</span></div>
+      <div class="details-body"><dl>
+        <dt>Situation</dt><dd>Personal loan applications go through a long vetting process. The bank would like to fast-track profitable applications.</dd>
+        <dt>Task</dt><dd>1. Determine the expected profitability of the loan based on application characteristics.<br>2. Examine the follow-up strategy on approved loans.</dd>
+        <dt>Actions &amp; Results</dt><dd>1. Loan applications bucketed into 5 categories from high to low profitability.<br>2. Several loan application characteristics identified as "highly profitable".<br>3. A/B testing showed calling approved applicants after 7, 10, 15 days increased acceptance rate by 5%.</dd>
+      </dl></div>
+    </details>
+    <details>
+      <summary>Eindhoven Police</summary>
+      <div class="dtag-row"><span class="tag">Discrete Event Simulation</span><span class="tag">Interviews</span></div>
+      <div class="details-body"><dl>
+        <dt>Situation</dt><dd>The force was aware of inefficient personnel planning and wanted to pivot towards a more collaborative plan between several departments.</dd>
+        <dt>Task</dt><dd>1. Create an efficient personnel deployment plan to handle incidents in the city.<br>2. Suggest ideas for a more collaborative police workforce.</dd>
+        <dt>Actions &amp; Results</dt><dd>1. Incident handling modelled to find the minimum required officer deployment for each shift and borough, reducing overall officer requirement while maintaining availability.<br>2. Flexible use of patrol officers and community officers during busy afternoon hours can reduce overall officer deployment.</dd>
+      </dl></div>
+    </details>
+    <details>
+      <summary>Fortune 500 Pharmaceutical Firm</summary>
+      <div class="dtag-row"><span class="tag">Multi-criteria Decision Making</span><span class="tag">Operations Strategy</span></div>
+      <div class="details-body"><dl>
+        <dt>Situation</dt><dd>The firm was interested in revising their EU medicine distribution strategy.</dd>
+        <dt>Task</dt><dd>Determine the choice between direct shipments or LSPs for different regions within EU under several criteria (operational, regulatory, sustainability).</dd>
+        <dt>Actions &amp; Results</dt><dd>1. Each region is assigned the best distribution strategy.<br>2. Use trucks instead of vans for long-distance transportation to reduce CO2 emissions.</dd>
+      </dl></div>
+    </details>
+  </div>
+
+  <!-- 2019 -->
+  <div class="ypanel" id="y2019">
+    <details>
+      <summary>Fortune 500 Footwear Manufacturer — Sales Lifecycle</summary>
+      <div class="dtag-row"><span class="tag">Clustering</span><span class="tag">Forecasting</span></div>
+      <div class="details-body"><dl>
+        <dt>Situation</dt><dd>The firm sells products on a large 3P online footwear retailer. The life cycle of each model differs from what it observes from its own sales data.</dd>
+        <dt>Task</dt><dd>Determine the sales life-cycle of products made available on the 3P's website.</dd>
+        <dt>Actions &amp; Results</dt><dd>1. Sales life cycle fitted to representative curves.<br>2. Shoe models clustered together based on style and sales patterns.<br>3. Sales patterns and sales volumes are uncorrelated — models are independently developed.</dd>
+      </dl></div>
+    </details>
+    <details>
+      <summary>Fortune 500 Footwear Manufacturer — Shipment Volume</summary>
+      <div class="dtag-row"><span class="tag">Machine Learning</span><span class="tag">Forecasting</span></div>
+      <div class="details-body"><dl>
+        <dt>Situation</dt><dd>Proper management of a product at end-of-life is crucial to minimize inventory risk. The firm was interested in examining its close-out inventory strategy.</dd>
+        <dt>Task</dt><dd>Predict the shipment volume of a product during its last two active seasons.</dd>
+        <dt>Actions &amp; Results</dt><dd>1. Several machine learning models tested for predictive performance.<br>2. Shipments and close-out volumes best predicted by a random forest model.<br>3. Model predictions can be improved with expert knowledge.</dd>
+      </dl></div>
+    </details>
+    <details>
+      <summary>Synchromodal LSP</summary>
+      <div class="dtag-row"><span class="tag">Stochastic Optimization</span><span class="tag">Simulation-based Optimization</span></div>
+      <div class="details-body"><dl>
+        <dt>Situation</dt><dd>The LSP can sell services in advance via allocation contracts or on the spot market. Allocation contracts lack volume constraints; the spot market is volatile but profitable.</dd>
+        <dt>Task</dt><dd>Determine the optimal mix between fixed and spot contracts while maximizing asset utilization.</dd>
+        <dt>Actions &amp; Results</dt><dd>1. A profit maximization model works better than a maximize asset utilization model.<br>2. Substituting express shipment allocation to spot markets yields higher profitability.<br>3. Contracts to freight forwarders should incorporate volume constraints to reduce volatility.</dd>
+      </dl></div>
+    </details>
+    <details>
+      <summary>Premium Dutch Supermarket</summary>
+      <div class="dtag-row"><span class="tag">Multi-echelon Supply Chain Planning</span><span class="tag">Inventory Planning</span></div>
+      <div class="details-body"><dl>
+        <dt>Situation</dt><dd>This supermarket advertises an "Always Fresh" policy and wants to explore how VMI can provide a strategic contribution.</dd>
+        <dt>Task</dt><dd>Examine why VMI shows disappointing performance in maintaining freshness in stores.</dd>
+        <dt>Actions &amp; Results</dt><dd>1. Stop VMI with suppliers unable to integrate the VMI system in their production planning.<br>2. VMI only provides benefits for perishable products — information sharing is crucial.<br>3. Better inventory management at the regional DC can also help reduce food waste.</dd>
+      </dl></div>
+    </details>
+  </div>
+
+  <!-- 2018 -->
+  <div class="ypanel" id="y2018">
+    <details>
+      <summary>Fortune 500 Footwear Manufacturer — Circular Supply Chain</summary>
+      <div class="dtag-row"><span class="tag">Data Exploration</span><span class="tag">Operations Strategy</span></div>
+      <div class="details-body"><dl>
+        <dt>Situation</dt><dd>The firm collects used footwear to recycle into rubber, EVA and fluff. They want to examine their take-back supply chain strategy and processing operations.</dd>
+        <dt>Task</dt><dd>Improve environmental performance of take-back supply chain and processing while minimizing total costs.</dd>
+        <dt>Actions &amp; Results</dt><dd>1. Standardize box sizes and shipping on all EOL footwear.<br>2. Install recycling collection points in more retail stores in the EU.<br>3. Explore outsourcing all collection activities for improved environmental impact of the circular supply chain.</dd>
+      </dl></div>
+    </details>
+    <details>
+      <summary>Electronics Manufacturer</summary>
+      <div class="dtag-row"><span class="tag">Process Design</span><span class="tag">Scheduling</span><span class="tag">Simulation</span></div>
+      <div class="details-body"><dl>
+        <dt>Situation</dt><dd>Firm experienced rapid growth in sales, and with it a growth in repair requests. However, they had no formalized repair process set up.</dd>
+        <dt>Task</dt><dd>1. Design a formal repair process flow for the entire production service department.<br>2. Design a repair scheduling algorithm.</dd>
+        <dt>Actions &amp; Results</dt><dd>1. A detailed process flow is mapped for the entire production service department.<br>2. A scheduling algorithm that minimizes "value in system" is implemented.</dd>
+      </dl></div>
+    </details>
+    <details>
+      <summary>Fortune 500 Office Supplies Retailer</summary>
+      <div class="dtag-row"><span class="tag">Data Analysis</span><span class="tag">Operations Strategy</span></div>
+      <div class="details-body"><dl>
+        <dt>Situation</dt><dd>The firm wanted to redesign its supply chain for private label products sourced from Asia that are sold in the EU.</dd>
+        <dt>Task</dt><dd>1. Improve inventory management.<br>2. Suggest alternatives for supply chain redesign.</dd>
+        <dt>Actions &amp; Results</dt><dd>1. Use direct shipments only for high margin products.<br>2. Re-evaluate safety stock levels at Central DC and regional DCs.<br>3. Relocating central DC to China can yield significant cost reductions; EU vendors can use direct shipments.</dd>
+      </dl></div>
+    </details>
+    <details>
+      <summary>Online Fashion Returns Processing Firm</summary>
+      <div class="dtag-row"><span class="tag">Performance Analytics</span><span class="tag">Design</span><span class="tag">Distributed Decision Making</span></div>
+      <div class="details-body"><dl>
+        <dt>Situation</dt><dd>High return rates from online fashion sales require efficient processing. With rapid e-commerce growth in the EU, the firm wanted to set up a performance management system for its return sites.</dd>
+        <dt>Task</dt><dd>Determine the appropriate detail level and design the PMS for returns processing sites in EU.</dd>
+        <dt>Actions &amp; Results</dt><dd>1. Three PMS levels implemented: individual site and organization each with unique KPIs at hour, shift, and month levels.<br>2. Efficiency gains possible if WMS of seller integrates with WMS of returns processing sites.<br>3. Invest in automation systems for counting, package processing and other manual tasks.</dd>
+      </dl></div>
+    </details>
+  </div>
+</div>
+
+<footer>
+  <span>Shaunak Dabadghao, PhD</span>
+  <span>shaunak3000 [at] gmail [dot] com</span>
+</footer>
+<script>
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('on');}),{threshold:0.05});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+function showY(btn,year){
+  document.querySelectorAll('.ytab').forEach(t=>t.classList.remove('on'));
+  document.querySelectorAll('.ypanel').forEach(p=>p.classList.remove('on'));
+  btn.classList.add('on');
+  document.getElementById('y'+year).classList.add('on');
+}
+</script>
+</body></html>

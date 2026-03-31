@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research — Shaunak Dabadghao</title>
+<link rel="stylesheet" href="_shared.css">
+<style>
+.area-tabs{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:1.5rem;}
+.atab{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:0.78rem;padding:0.5rem 1.1rem;border:none;background:none;cursor:pointer;color:var(--text-muted);border-bottom:2px solid transparent;margin-bottom:-1px;transition:all 0.15s;}
+.atab:hover{color:var(--text);}
+.atab.on{color:var(--accent);border-bottom-color:var(--accent);font-weight:600;}
+.apanel{display:none;}
+.apanel.on{display:block;}
+.area-intro{font-size:0.92rem;color:var(--text-muted);line-height:1.75;margin-bottom:1.25rem;}
+.details-body p{font-size:0.9rem;color:var(--text-muted);line-height:1.75;margin:0 0 0.9em;}
+.details-body .paper-link{font-size:0.85rem;}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <a href="index.html" class="nav-name">shaunakdabadghao</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html" class="active">Research</a></li>
+    <li><a href="consulting.html">Consulting</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+  <h1>Research</h1>
+
+  <blockquote class="reveal">
+    <p>My research sits where finance, operations, and risk converge — because the most consequential business decisions rarely fall neatly into one discipline. From credit derivatives and portfolio optimization, to supply chain disruption and circular markets: the common thread is quantitative rigor applied to problems with real stakes. Occasionally, that same rigor gets pointed at sport — and finds equally interesting problems.</p>
+  </blockquote>
+
+  <div class="callout reveal">
+    Published in FT50-ranked journals including <code>Journal of Operations Management</code>, <code>Journal of Economic Dynamics &amp; Control</code>, <code>Journal of Operational Research Society</code>, and <code>Annals of Operations Research</code>.
+    &nbsp; <a href="https://scholar.google.com/citations?user=n4YZN3cAAAAJ&hl=en" target="_blank">All publications on Google Scholar ↗</a>
+  </div>
+
+  <hr>
+
+  <div class="area-tabs reveal">
+    <button class="atab on" onclick="showA(this,'finance')">Mathematical Finance</button>
+    <button class="atab" onclick="showA(this,'supply')">Supply Chain Networks &amp; Finance</button>
+    <button class="atab" onclick="showA(this,'circular')">Circular Economy</button>
+    <button class="atab" onclick="showA(this,'sports')">Sports Analytics</button>
+  </div>
+
+  <!-- Mathematical Finance -->
+  <div class="apanel on" id="afinance">
+    <p class="area-intro">My research work in Mathematical Finance focuses on Credit Risk, Pricing and Portfolio Optimization.</p>
+
+    <details>
+      <summary>Portfolio Optimization with Credit Default Swaps</summary>
+      <div class="dtag-row"><span class="tag">Portfolio Optimization</span><span class="tag">Credit Default Swaps</span><span class="tag">PhD Dissertation</span></div>
+      <div class="details-body">
+        <p>Two linked problems: pricing a CDS and optimizing a portfolio across a CDS, the underlying firm's stock, and a money market account. The CDS is priced using a doubly stochastic process driven by the firm's stock price and random jumps, in a regime-switching market. Optimal portfolio strategies are derived explicitly via a Hamilton-Jacobi-Bellman framework for an investor with logarithmic utility.</p>
+        <p><em>PhD Dissertation, Purdue University.</em></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Valuing Switching Options</summary>
+      <div class="dtag-row"><span class="tag">Real Options</span><span class="tag">Moving Boundary</span><span class="tag">Journal of Economic Dynamics &amp; Control</span></div>
+      <div class="details-body">
+        <p>We develop a new computational method to value switching options using a moving boundary approach, solved across two regimes for a finite time horizon. The methodology applies to power plant operations — where a generator is switched on or off depending on fuel costs and electricity revenues — and to near-shoring/offshoring decisions where a firm switches production between facilities based on costs and trade barriers.</p>
+        <p class="paper-link"><a href="https://www.sciencedirect.com/science/article/pii/S0165188921000592" target="_blank">Read the full article ↗</a></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Assigning Sovereign Credit Ratings from CDS Spreads</summary>
+      <div class="dtag-row"><span class="tag">Sovereign Risk</span><span class="tag">Credit Ratings</span><span class="tag">CDS</span></div>
+      <div class="details-body">
+        <p>We develop a model that uses CDS spreads on sovereign debt to extract implied default rates, then applies regression to predict future default rates and assign credit ratings. Our model outperforms those used by the Big-3 ratings agencies, providing accurate ratings of EU sovereign debt months before Moody's, S&amp;P, and Fitch adjust theirs.</p>
+        <p class="paper-link"><a href="https://www.emerald.com/insight/content/doi/10.1108/JRF-06-2017-0096/full/html" target="_blank">Read the full article ↗</a></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Basel III: Economic Capital for Strategic Risk</summary>
+      <div class="dtag-row"><span class="tag">Basel III</span><span class="tag">Economic Capital</span><span class="tag">Banking Regulation</span></div>
+      <div class="details-body">
+        <p>Basel III mandates capital reserves for strategic risk, yet no agreed measurable definition exists. We propose a practitioner-verified definition and a simulation-based framework to estimate economic capital — using the cost of equity as the profitability threshold. Validated against ABN AMRO's actual capital outlay, the framework is simple, generalizable, and immediately implementable.</p>
+        <p class="paper-link"><a href="https://www.emerald.com/jrf/article/19/3/225/247501" target="_blank">Read the full article ↗</a></p>
+      </div>
+    </details>
+  </div>
+
+  <!-- Supply Chain Networks & Finance -->
+  <div class="apanel" id="asupply">
+    <p class="area-intro">This research examines how financial decisions and external shocks — trade policies, tariffs, and operational crises — propagate through supply networks, combining operations models with financial market analysis.</p>
+
+    <details>
+      <summary>Working Capital Management in Supply Networks</summary>
+      <div class="dtag-row"><span class="tag">Trade Credit</span><span class="tag">Working Capital</span><span class="tag">Supply Networks</span><span class="tag">Under Review · Journal of Operations Management</span></div>
+      <div class="details-body">
+        <p>Aggressive trade credit policies may boost a firm's own profitability but harms its supply chain partners. We show that firms adopting industry-standard, collaborative trade policies increase profitability across the entire supply chain — making the case for inclusive, network-aware financial strategy.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Global Sourcing under Tariffs</summary>
+      <div class="dtag-row"><span class="tag">Global Sourcing</span><span class="tag">Tariffs</span><span class="tag">Time Series Clustering</span></div>
+      <div class="details-body">
+        <p>Not all supply chains respond to trade shocks the same way. Using the 2018–2019 U.S.–China tariffs as a natural experiment, we uncover seven distinct global sourcing responses through time series clustering. The key differentiator: firms with stronger financials and higher growth potential weathered the disruption far better — revealing that a supply chain's resilience is ultimately a reflection of the firm behind it.</p>
+        <p class="paper-link"><a href="https://www.sciencedirect.com/science/article/pii/S092552732400330X" target="_blank">Read the full article ↗</a></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Disruption Propagation through Complex Supply Networks</summary>
+      <div class="dtag-row"><span class="tag">Disruption Management</span><span class="tag">Event Study</span><span class="tag">Supply Network Risk</span><span class="tag">Under Review · Journal of Operations Management</span></div>
+      <div class="details-body">
+        <p>Using the Boeing 737MAX crisis as a natural experiment, we trace how a single firm's operational failure ripples through tier-1 and tier-2 suppliers and downstream customers via abnormal stock returns. We find that markets respond not only to the severity of a disruption but to what it signals about operational health — and document cross-competitor spillovers into Airbus's supply network among shared suppliers.</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- Circular Economy -->
+  <div class="apanel" id="acircular">
+    <p class="area-intro">This research spans two interconnected themes: the economics of circular markets for refurbished products, and the governance of sustainability across supply chains. Together they examine how firms can extract more value from existing goods while managing their broader environmental and social footprint.</p>
+
+    <details>
+      <summary>The Price of a Second Life</summary>
+      <div class="dtag-row"><span class="tag">Pricing</span><span class="tag">Consumer Behavior</span><span class="tag">Circular Economy</span><span class="tag">Journal of Operations Management</span></div>
+      <div class="details-body">
+        <p>We combine consumer surveys with analytical models to find optimal prices and refurbishing activity in a competitive market. Understanding how consumers adopt refurbished products is crucial before entering such a market — and the availability of used products turns out to be a key driver of both pricing decisions and refurbishing activity.</p>
+        <p class="paper-link"><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/joom.1208" target="_blank">Read the full article ↗</a></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Licensed to Refurbish</summary>
+      <div class="dtag-row"><span class="tag">Authorization</span><span class="tag">OEM Strategy</span><span class="tag">Circular Economy</span></div>
+      <div class="details-body">
+        <p>OEMs often authorize third parties to refurbish and resell their smartphones, lending credibility that lets the 3P charge higher prices. We determine the optimal authorization fee the OEM should charge — balancing the 3P's improved market position against the OEM's own revenue from the arrangement.</p>
+        <p class="paper-link"><a href="https://link.springer.com/article/10.1007/s10696-023-09519-5" target="_blank">Read the full article ↗</a></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>The Goldilocks Problem of Refurbished Launches</summary>
+      <div class="dtag-row"><span class="tag">Product Launch</span><span class="tag">Pricing</span><span class="tag">Circular Economy</span><span class="tag">Under Review · Flexible Systems and Manufacturing</span></div>
+      <div class="details-body">
+        <p>Launch a refurbished model too early and it cannibalizes new product sales; too late and newer versions have already eroded demand. We determine the optimal launch time, price, and quantity — navigating the tension between cannibalization and obsolescence to maximize value from the refurbished market.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Sustainability Starts Upstream</summary>
+      <div class="dtag-row"><span class="tag">Supplier Sustainability</span><span class="tag">Literature Review</span><span class="tag">Supply Chain Management</span></div>
+      <div class="details-body">
+        <p>A firm's supply chain typically has a larger environmental and social footprint than its own operations — yet most firms focus sustainability efforts inward. We review the fragmented landscape of supplier sustainability management (SSM) research across disciplines, proposing the MMAIG framework (Motivation–Measure–Analyze–Improve–Govern) to map the field and chart a path forward. The diagnosis: research is rich in measurement, thin on improvement. The prescription: collaborative, data-driven, and trust-based approaches that align incentives across the entire chain.</p>
+        <p class="paper-link"><a href="https://www.sciencedirect.com/science/article/pii/S2667344422000032" target="_blank">Read the full article ↗</a></p>
+      </div>
+    </details>
+  </div>
+
+  <!-- Sports Analytics -->
+  <div class="apanel" id="asports">
+    <p class="area-intro">Quantitative methods applied to sport — ranking systems, passing networks, and crowd intelligence. This work spans peer-reviewed journals and a finalist appearance at the MIT Sloan Sports Analytics Conference.</p>
+
+    <details>
+      <summary>Who Really Deserves the Top Spot?</summary>
+      <div class="dtag-row"><span class="tag">Rankings</span><span class="tag">Incentive Compatibility</span><span class="tag">Journal of Operational Research Society</span></div>
+      <div class="details-body">
+        <p>We design a ranking methodology that is fair, incentive-compatible, and order-independent — accounting for strength of schedule, ensuring teams are always motivated to win, and producing ratings that don't depend on the sequence of matches played.</p>
+        <p class="paper-link"><a href="https://www.tandfonline.com/doi/abs/10.1057/s41274-017-0266-8" target="_blank">Read the full article ↗</a></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>The Geometry of Play</summary>
+      <div class="dtag-row"><span class="tag">Network Analysis</span><span class="tag">Soccer</span><span class="tag">MIT Sloan Finalist 2017</span><span class="tag">Journal of Sports Analytics</span></div>
+      <div class="details-body">
+        <p>We model passes in soccer matches as networks and use graph theory to fingerprint the play styles of individual players, teams, and coaches. The framework has direct applications in player recruitment, opponent scouting, and coaching hires.</p>
+<p class="paper-link" style="margin-top:0.75em;"><a href="https://content.iospress.com/download/journal-of-sports-analytics/jsa190290?id=journal-of-sports-analytics%2Fjsa190290" target="_blank">Read the full article ↗</a></p>
+      </div>
+    </details>
+
+    <details>
+      <summary>The Wisdom of Recruits</summary>
+      <div class="dtag-row"><span class="tag">Crowd Intelligence</span><span class="tag">Markov Chains</span><span class="tag">College Football</span><span class="tag">Annals of Operations Research</span></div>
+      <div class="details-body">
+        <p>We combine Markov chains with the wisdom of crowds to build Crowd-Ranking — a new method for ranking NCAA football teams. The key insight: when a highly recruited player (a signal of quality) joins a team, that team's ranking should improve, even before a game is played.</p>
+        <p class="paper-link"><a href="https://link.springer.com/article/10.1007/s12351-017-0324-7" target="_blank">Read the full article ↗</a></p>
+      </div>
+    </details>
+  </div>
+
+</div>
+
+<footer>
+  <span>Shaunak Dabadghao, PhD</span>
+  <span>shaunak3000 [at] gmail [dot] com</span>
+</footer>
+<script>
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('on');}),{threshold:0.05});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+function showA(btn,area){
+  document.querySelectorAll('.atab').forEach(t=>t.classList.remove('on'));
+  document.querySelectorAll('.apanel').forEach(p=>p.classList.remove('on'));
+  btn.classList.add('on');
+  document.getElementById('a'+area).classList.add('on');
+}
+</script>
+</body></html>

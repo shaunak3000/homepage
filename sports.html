@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sports Analytics — Shaunak Dabadghao</title>
+<link rel="stylesheet" href="_shared.css">
+<style>
+.proj-img{border:1px solid var(--border);border-radius:6px;overflow:hidden;margin:1em 0;}
+.proj-img img{width:100%;display:block;}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <a href="index.html" class="nav-name">shaunakdabadghao</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="consulting.html">Consulting</a></li>
+    <li><a href="sports.html" class="active">Sports</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+  <h1>Sports Analytics</h1>
+
+  <blockquote class="reveal">
+    <p>Quantitative methods applied to sport — rankings, passing networks, and crowd intelligence.</p>
+  </blockquote>
+
+  <hr>
+
+  <div class="reveal">
+    <h2>How should we rank teams and players?</h2>
+    <p><code>Rankings · Published</code></p>
+    <p>A ranking methodology designed to be fair, incentive-compatible, and order-independent.</p>
+    <ul>
+      <li>Strength of opponents / schedule should be accounted for</li>
+      <li>Teams should have an incentive to win to improve their rating</li>
+      <li>Sequence of matches on a team's schedule should not affect their rating</li>
+    </ul>
+    <blockquote><p>Peer-reviewed journal publication</p></blockquote>
+    <p><a href="https://www.tandfonline.com/doi/abs/10.1057/s41274-017-0266-8" target="_blank">Read the full article ↗</a></p>
+  </div>
+
+  <hr>
+
+  <div class="reveal">
+    <h2>Assessing passing behavior in association soccer</h2>
+    <p><code>Network Analysis · MIT Sloan Finalist</code></p>
+    <p>We analyzed passes in soccer matches using networks and graph theory to identify play styles of players, teams, and coaches.</p>
+    <ul>
+      <li>Replacing / hiring players with specific skills</li>
+      <li>Countering opponents' play strategy</li>
+      <li>Hiring new coaches</li>
+    </ul>
+    <blockquote><p>Finalist — MIT Sloan Sports Analytics Conference Research Paper Competition, 2017</p></blockquote>
+    <div class="proj-img">
+      <img src="images/messi-radar.png" alt="Lionel Messi passing network radar chart — PxGMs analysis across Barcelona seasons">
+    </div>
+    <p><a href="https://content.iospress.com/download/journal-of-sports-analytics/jsa190290?id=journal-of-sports-analytics%2Fjsa190290" target="_blank">Read the full article ↗</a></p>
+  </div>
+
+  <hr>
+
+  <div class="reveal">
+    <h2>Applying wisdom of crowds to rank college football teams</h2>
+    <p><code>Crowd Intelligence · Springer</code></p>
+    <p>We use a combination of Markov chains and wisdom of crowds to create a new ranking method: Crowd-Ranking.</p>
+    <ul>
+      <li>When a player with many offers (indicating a skilled player) joins a team, it will improve in ranking</li>
+      <li>Applied this method to rank NCAA football teams</li>
+    </ul>
+    <blockquote><p>Published in Springer journal</p></blockquote>
+    <p><a href="https://link.springer.com/article/10.1007/s12351-017-0324-7" target="_blank">Read the full article ↗</a></p>
+  </div>
+</div>
+
+<footer>
+  <span>Shaunak Dabadghao, PhD</span>
+  <a href="mailto:shaunak3000@gmail.com">shaunak3000@gmail.com</a>
+</footer>
+<script>
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('on');}),{threshold:0.05});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body></html>
